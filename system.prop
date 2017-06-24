@@ -135,6 +135,16 @@ ro.baseband.arch=msm
 ro.telephony.call_ring.multiple=false
 ro.ril.telephony.mqanelements=5
 
+# Radio - IMS
+persist.data.iwlan.enable=true
+persist.radio.calls.on.ims=true
+persist.radio.hw_mbn_update=1
+persist.radio.sw_mbn_openmkt=1
+persist.radio.sw_mbn_update=1
+persist.radio.sw_mbn_volte=1
+persist.radio.start_ota_daemon=1
+persist.volte_enalbed_by_hw=1
+
 # RmNet Data
 persist.rmnet.data.enable=true
 persist.data.wda.enable=true
