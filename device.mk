@@ -172,7 +172,8 @@ PRODUCT_PACKAGES += \
 
 # IMS
 PRODUCT_PACKAGES += \
-    com.android.ims.rcsmanager
+    com.android.ims.rcsmanager \
+    libshims_ims
 
 # Init
 PRODUCT_PACKAGES += \
