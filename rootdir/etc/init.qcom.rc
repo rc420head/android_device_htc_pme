@@ -553,7 +553,7 @@ on property:sys.ims.DATA_DAEMON_STATUS=1
 service imscmservice /system/bin/imscmservice
     class main
     user system
-    group radio net_raw qcom_diag log
+    group radio net_raw qcom_diag inet log
     disabled
     writepid /dev/cpuset/system-background/tasks
 
