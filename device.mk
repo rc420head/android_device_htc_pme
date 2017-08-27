@@ -35,9 +35,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 
-$(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-dalvik-heap.mk)
-$(call inherit-product, frameworks/native/build/phone-xxxhdpi-4096-hwui-memory.mk)
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -84,9 +81,6 @@ PRODUCT_PACKAGES += \
     com.dsi.ant.antradio_library \
     libantradio
 
-PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml
-
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
@@ -123,7 +117,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     libshim_camera \
-    Snap
+    SnapdragonCamera
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
@@ -218,7 +212,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    lights.msm8996
+    lights.pme
 
 # Media
 PRODUCT_COPY_FILES += \

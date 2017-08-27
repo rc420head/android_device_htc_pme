@@ -173,6 +173,7 @@ BOARD_NFC_CHIPSET := pn548
 TARGET_USES_NQ_NFC := true
 
 # Power
+TARGET_USES_DEVICE_SPECIFIC_POWERHAL := true
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.msm8996
 
 # Qualcomm
@@ -190,7 +191,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/htc/pme/releasetools
 PROTOBUF_SUPPORTED := true
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/Android.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Wifi
